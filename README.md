@@ -2,15 +2,14 @@
 
 <img src="asset/globe.gif" alt="Globe Animation" width="600" height="338">
 
-A Python-based secure and anonymous peer-to-peer (P2P) chat application with encrypted messaging, designed to provide privacy-focused communication. The application supports local and cross-network communication, leveraging encryption and user authentication.
+A Python-based secure and anonymous chat application with asymmetric encryption messaging, designed to provide privacy-focused communication. The application supports local and cross-network communication, leveraging encryption and user authentication.
 
 ---
 
 ## Features
 
-- **End-to-End Encryption**: All messages are encrypted to ensure secure communication.
+- **End-to-End Encryption**: All messages use asymmetric encryption to ensure secure communication.
 - **User Authentication**: Registration and login functionality with encrypted local storage for user credentials.
-- **Peer-to-Peer Communication**: Direct communication without reliance on centralized servers.
 - **Cross-Network Functionality**: Supports communication across different networks (e.g., from one country to another).
 - **Local Data Storage**: Only usernames and encrypted credentials are stored locally.
 - **Dark-Themed GUI**: A modern GUI with a cybersecurity theme for ease of use.
@@ -23,8 +22,12 @@ A Python-based secure and anonymous peer-to-peer (P2P) chat application with enc
 - Python 3.8 or higher
 - Required libraries (install via `pip install -r requirements.txt`):
   - `tkinter`
-  - `cryptography`
   - `websockets`
+  - `cryptography==41.0.0`
+  - `pillow==10.0.0`
+  - `pytest==7.4.0`
+  - `pytest-mock==3.11.1`
+  - `sqlite3`
 
 ---
 
@@ -53,9 +56,8 @@ A Python-based secure and anonymous peer-to-peer (P2P) chat application with enc
 
 1. **Registration**: Create a new account by providing a username and password. Credentials are securely stored using encryption.
 2. **Login**: Log in to the application to access the chat interface.
-3. **Connect to a Peer**: Enter the peer's IP address and User ID to establish a connection.
-4. **Chat Securely**: Exchange encrypted messages in real-time. Messages are displayed in a chat interface, formatted with sent and received messages aligned left and right, respectively.
-5. **Logout**: Safely exit the application using the logout button.
+3. **Chat Securely**: Exchange encrypted messages in real-time. Messages are displayed in a chat interface, formatted with sent and received messages aligned left and right, respectively.
+4. **Logout**: Safely exit the application using the logout button.
 
 ---
 
@@ -66,7 +68,7 @@ The application follows a structured development approach:
 1. **Encryption**: Ensures data security during transmission and storage.
 2. **WebSocket Communication**: Provides real-time, low-latency messaging between peers.
 3. **Tkinter GUI**: A user-friendly graphical interface with a dark theme.
-4. **Local Storage**: Stores encrypted credentials in a local database.
+4. **Local Storage**: Stores encrypted credentials in a sqlite3 local database.
 
 ---
 
@@ -92,41 +94,3 @@ The application follows a structured development approach:
   - Advanced message delivery confirmation
 
 ---
-
-## Contribution
-
-Contributions are welcome! Feel free to submit issues, fork the repository, and create pull requests.
-
-1. Fork the repository.
-2. Create a new branch:
-   ```bash
-   git checkout -b feature/YourFeature
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Add YourFeature"
-   ```
-4. Push to your branch:
-   ```bash
-   git push origin feature/YourFeature
-   ```
-5. Create a pull request.
-
----
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-## Acknowledgments
-
-- **Cryptography Module**: For providing robust encryption algorithms.
-- **WebSocket Library**: For enabling real-time messaging.
-- **Tkinter**: For the GUI design framework.
-
----
-
-For more information, visit the [repository](https://github.com/CrashNBurn1337/SecureChatApplication).
-
