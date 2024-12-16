@@ -1,6 +1,6 @@
 # Secure Chat Application
 
-<img src="asset/globe.gif" alt="Globe Animation" width="400" height="300">
+<img src="asset/globe.gif" alt="Globe Animation" width="600" height="338">
 
 A Python-based secure and anonymous peer-to-peer (P2P) chat application with encrypted messaging, designed to provide privacy-focused communication. The application supports local and cross-network communication, leveraging encryption and user authentication.
 
@@ -72,11 +72,11 @@ The application follows a structured development approach:
 ## Screenshots
 
 ### Login Screen
-<img src="asset/login_registration.png" alt="Login Screen" width="400" height="300">
+<img src="asset/login_registration.png" alt="Login Screen" width="600" height="338">
 
 
 ### Chat Interface
-<img src="asset/chat_interface.png" alt="Chat Interface" width="400" height="300">
+<img src="asset/chat_interface.png" alt="Chat Interface" width="600" height="338">
 ---
 
 ## Development Roadmap
