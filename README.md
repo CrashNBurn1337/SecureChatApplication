@@ -43,7 +43,8 @@ A Python-based secure and anonymous peer-to-peer (P2P) chat application with enc
 
 3. Run the application:
    ```bash
-   python main.py
+   python socket_server.py
+   python main.py #client appication
    ```
 
 ---
